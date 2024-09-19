@@ -1,0 +1,33 @@
+
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init
+
+
+// postcss.config.js
+import tailwindcss from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
+
+export default {
+  plugins: [
+    tailwindcss(),
+    autoprefixer(),
+  ],
+};
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+// tailwind.config.js
+module.exports = {
+  content: [
+    './src/**/*.{js,ts,jsx,tsx}', // Adjust paths as needed
+    './public/index.html', // If using Tailwind in HTML files
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}

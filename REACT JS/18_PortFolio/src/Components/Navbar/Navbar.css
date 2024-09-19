@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;  
+  align-items: center;
+ 
+}
+
+.navbar .logo img{
+  width: 200px;
+  height: 40px;
+}
+
+.navbar .navbar-components{
+  display: flex;
+  /* margin-left: 120px; */
+}
+
+.navbar .navbar-components ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar .navbar-components ul li{
+  cursor: pointer;
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+.navbar-button button{
+  cursor: pointer;
+  width: 120px;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "SUSE", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+}
+
+@media (max-width: 1050px) {
+
+  .navbar{
+    margin-top: 30px;
+    
+  }
+  .navbar .navbar-components ul{
+    gap: 15px;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbar{
+    margin-top: 30px;
+  }
+  .navbar .logo img{
+    display: none;
+  }
+  .navbar .navbar-components ul{
+    gap: 20px;
+  }
+
+
+  .navbar-button button{
+    width: 80px;
+    font-size: 8px;
+    margin-right: 10px;
+    margin-left: 30px;
+  }
+}

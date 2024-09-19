@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Navbar.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+
+    <ul class="sidebar">
+      <li onclick=closeSidebar()><img src="./close.png" alt="" srcset=""  width="30px" height="50px"></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="#">Contact us</a></li>
+      <li><a href="#">Resum</a></li>
+      <li><a href="#">Hire Me</a></li>
+    </ul>
+
+  <ul>
+    
+    <li><a href="#">Home</a></li>
+    <li class="hideMobile"><a href="#">About</a></li>
+    <li class="hideMobile"><a href="#">Skills</a></li>
+    <li class="hideMobile"><a href="#">Contact us</a></li>
+    <li class="hideMobile"><a href="#">Resum</a></li>
+    <li class="hideMobile"><a href="#">Hire Me</a></li>
+    <li onclick=showSidebar()><img src="./4.png" alt="" width="30px" height="50px"></li>
+  </ul>
+</nav>
+<script>
+  function showSidebar(){
+  const sidebar=document.querySelector('.sidebar');
+  sidebar.style.display='flex'
+}
+
+function closeSidebar(){
+  const sidebar=document.querySelector('.sidebar');
+  sidebar.style.display='none'
+}
+</script>
+</body>
+
+</html>
